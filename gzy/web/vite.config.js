@@ -31,7 +31,7 @@ export default defineConfig(({ command, mode }) => {
   })
 
   return {
-    base: isProd ? cdnUrl : '/',
+    base: isProd ? cdnUrl : '/web',
     plugins: [
       reactWithLoc,
       isProd ?  ExitPlugin() : null
