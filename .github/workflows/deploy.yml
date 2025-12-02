@@ -20,7 +20,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,35 +30,16 @@ jobs:
         with:
           node-version: '20.19.5'
 
-      - name: Check repository structure
-        run: |
-          echo "=== Repository root structure ==="
-          ls -la
-          echo ""
-          echo "=== package.json exists ==="
-          cat package.json | head -20
-
       - name: Install dependencies
         run: |
-          echo "=== Installing all dependencies including devDependencies ==="
-          npm install --include=dev --verbose
+          echo "=== Installing dependencies with legacy peer deps ==="
+          npm install --legacy-peer-deps
           echo ""
           echo "=== Verifying vite installation ==="
-          ls -la node_modules/.bin/ | grep vite || echo "vite binary not found"
-          echo ""
-          echo "=== Testing npx vite ==="
-          npx vite --version || echo "npx vite failed"
-          echo ""
-          echo "=== Checking PATH ==="
-          echo $PATH
-          echo ""
-          echo "=== Direct node_modules bin check ==="
-          ./node_modules/.bin/vite --version || echo "Direct vite call failed"
+          npx vite --version
 
       - name: Build
-        run: |
-          echo "=== Starting build with npm run build ==="
-          npm run build
+        run: npm run build
         env:
           NODE_OPTIONS: '--max_old_space_size=4096'
 
