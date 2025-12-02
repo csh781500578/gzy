@@ -33,8 +33,7 @@ jobs:
           cache-dependency-path: './package-lock.json'
           
       - name: Install dependencies
-        run: npm cache clean --force
-             npm install
+        run: npm run build
             
       - name: Build
         run: npm run build
