@@ -12,25 +12,25 @@ const Banner: React.FC = React.memo(() => {
   const backgroundSlides = [
     {
       gradient: 'linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%)',
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/banner/banner-1.svg',
       title: '精工细作，品质卓越',
       subtitle: '每一件产品都体现着我们对品质的执着追求'
     },
     {
       gradient: 'linear-gradient(135deg, #1e293b 0%, #334155 25%, #475569 50%, #64748b 75%, #94a3b8 100%)',
-      image: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/banner/banner-2.svg',
       title: '先进设备，高效生产',
       subtitle: '现代化生产线确保产品质量与交期'
     },
     {
       gradient: 'linear-gradient(135deg, #334155 0%, #475569 25%, #64748b 50%, #94a3b8 75%, #cbd5e1 100%)',
-      image: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/banner/banner-3.svg',
       title: '专业工艺，精密制造',
       subtitle: '多年行业经验，专注金属茶几半成品加工'
     },
     {
       gradient: 'linear-gradient(135deg, #475569 0%, #64748b 25%, #94a3b8 50%, #cbd5e1 75%, #e2e8f0 100%)',
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/banner/banner-4.svg',
       title: '智能制造，工业4.0',
       subtitle: '融合人工智能与传统工艺的智慧工厂'
     }

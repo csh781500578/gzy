@@ -15,8 +15,8 @@ const Products: React.FC = () => {
       name: '现代简约风格茶几',
       category: '简约系列',
       material: '不锈钢+钢化玻璃',
-      imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      mobileImageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75',
+      imageUrl: '/images/products/product-1.svg',
+      mobileImageUrl: '/images/products/product-1.svg',
       features: ['防锈处理', '承重强', '易清洁']
     },
     {
@@ -24,8 +24,8 @@ const Products: React.FC = () => {
       name: '工业风金属茶几',
       category: '工业风系列',
       material: '铁艺+实木',
-      imageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      mobileImageUrl: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75',
+      imageUrl: '/images/products/product-2.svg',
+      mobileImageUrl: '/images/products/product-2.svg',
       features: ['复古设计', '稳固耐用', '个性时尚']
     },
     {
@@ -33,8 +33,8 @@ const Products: React.FC = () => {
       name: '北欧风茶几',
       category: '北欧系列',
       material: '金属+大理石',
-      imageUrl: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      mobileImageUrl: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75',
+      imageUrl: '/images/products/product-3.svg',
+      mobileImageUrl: '/images/products/product-3.svg',
       features: ['轻量化', '美观大方', '多场景适用']
     },
     {
@@ -42,8 +42,8 @@ const Products: React.FC = () => {
       name: '轻奢风茶几',
       category: '轻奢系列',
       material: '不锈钢+玻璃',
-      imageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      mobileImageUrl: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75',
+      imageUrl: '/images/products/product-4.svg',
+      mobileImageUrl: '/images/products/product-4.svg',
       features: ['经典设计', '百搭风格', '质量保证']
     },
     {
@@ -51,8 +51,8 @@ const Products: React.FC = () => {
       name: '创意设计茶几',
       category: '创意系列',
       material: '不锈钢+亚克力',
-      imageUrl: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      mobileImageUrl: 'https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75',
+      imageUrl: '/images/products/product-4.svg',
+      mobileImageUrl: '/images/products/product-5.svg',
       features: ['简约大气', '耐用稳固', '商务首选']
     },
     {
@@ -60,8 +60,8 @@ const Products: React.FC = () => {
       name: '多功能茶几',
       category: '功能系列',
       material: '金属+木质',
-      imageUrl: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      mobileImageUrl: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=75',
+      imageUrl: '/images/products/product-6.svg',
+      mobileImageUrl: '/images/products/product-6.svg',
       features: ['创新设计', '独特造型', '彰显品味']
     }
   ];

@@ -31,10 +31,16 @@ export default defineConfig(({ command, mode }) => {
   })
 
   return {
-    base: isProd ? cdnUrl : '/web',
+    // GitHub Pages部署时需要设置base路径
+    // 如果仓库名是'guangzhiyou-website'，则base应为'/guangzhiyou-website/'
+    // 如果使用自定义域名，则base可以设置为'/'
+    base: process.env.VITE_BASE_PATH || (isProd ? cdnUrl : '/'),
     plugins: [
       reactWithLoc,
-      isProd ?  ExitPlugin() : null
+      isProd ?  ExitPlugin() : null,
+      legacy({
+        targets: ['defaults', 'not IE 11']
+      })
     ],
     css: {
       modules: {
@@ -67,13 +73,14 @@ export default defineConfig(({ command, mode }) => {
     },
     build: {
       outDir: 'dist',
-      assetsDir: '',
+      assetsDir: 'assets',
       target: 'es2020',
       minify: 'esbuild',
       cacheDir: './.vite_cache',
       sourcemap: false,
       chunkSizeWarningLimit: 1000,
       polyfillDynamicImport: false,
+      assetsInlineLimit: 4096,
       rollupOptions: {
         input: resolve(__dirname, 'index.html'),
         output: {

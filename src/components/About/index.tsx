@@ -51,7 +51,7 @@ const About: React.FC = () => {
   // 企业风采展示
   const galleryImages = [
     {
-      imageUrl: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/gallery/gallery-1.svg',
       icon: 'mdi:factory',
       iconSize: 'w-24 h-24',
       title: '现代化厂房',
@@ -59,7 +59,7 @@ const About: React.FC = () => {
       details: '• 现代化钢结构厂房\n• 完善的消防安全设施\n• 绿色环保生产环境'
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1565043666747-69f6646db940?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/gallery/gallery-2.svg',
       icon: 'mdi:cog-outline',
       iconSize: 'w-24 h-24',
       title: '智能生产车间',
@@ -67,7 +67,7 @@ const About: React.FC = () => {
       details: '• 数控切割设备\n• 自动化焊接生产线\n• 智能质检系统'
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/gallery/gallery-3.svg',
       icon: 'mdi:shield-check',
       iconSize: 'w-24 h-24',
       title: '质检中心',
@@ -75,7 +75,7 @@ const About: React.FC = () => {
       details: '• ISO 9001认证体系\n• 专业质检设备\n• 全程质量追溯'
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/gallery/gallery-4.svg',
       icon: 'mdi:warehouse',
       iconSize: 'w-24 h-24',
       title: '仓储物流',
@@ -83,7 +83,7 @@ const About: React.FC = () => {
       details: '• 智能仓储管理\n• 覆盖全国配送\n• 准时交付保障'
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/gallery/gallery-5.svg',
       icon: 'mdi:account-tie',
       iconSize: 'w-24 h-24',
       title: '研发团队',
@@ -91,7 +91,7 @@ const About: React.FC = () => {
       details: '• 15年行业经验\n• 产品设计创新\n• 定制化解决方案'
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/gallery/gallery-6.svg',
       icon: 'mdi:trophy',
       iconSize: 'w-24 h-24',
       title: '企业荣誉',
@@ -432,3 +432,5 @@ const About: React.FC = () => {
 };
 
 export default React.memo(About);
+
+// Force refresh: 2024-11-29

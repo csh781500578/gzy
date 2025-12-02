@@ -1,0 +1,11 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ggr2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#334155;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#64748b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#ggr2)"/>
+  <text x="50%" y="45%" font-family="Arial, sans-serif" font-size="48" fill="#3b82f6" text-anchor="middle" font-weight="bold">智能生产车间</text>
+  <text x="50%" y="60%" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1" text-anchor="middle">5条现代化生产线</text>
+</svg>
