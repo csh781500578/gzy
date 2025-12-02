@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:prod": "vite build --mode production",
+    "dev": "npx vite",
+    "build": "npx vite build",
+    "build:prod": "npx vite build --mode production",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "preview": "vite preview"
+    "deploy": "npx gh-pages -d dist",
+    "preview": "npx vite preview"
   },
   "engines": {
     "node": ">=20.19.5"
