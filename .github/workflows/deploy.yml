@@ -30,13 +30,33 @@ jobs:
         with:
           node-version: '20.19.5'
           cache: 'npm'
-          cache-dependency-path: './package-lock.json'
+      
+      - name: Verify package.json
+        run: |
+          echo "=== Checking package.json ==="
+          cat package.json
+          echo ""
+          echo "=== Checking if package-lock.json exists ==="
+          ls -la package-lock.json || echo "package-lock.json not found"
           
       - name: Install dependencies
-        run: npm run build
-            
+        run: |
+          echo "=== Installing dependencies ==="
+          npm install --verbose
+          echo ""
+          echo "=== Checking node_modules ==="
+          ls -la node_modules/ | head -20
+          echo ""
+          echo "=== Checking if vite is installed ==="
+          ls -la node_modules/.bin/vite || echo "vite binary not found"
+          echo ""
+          echo "=== Checking vite version ==="
+          npx vite --version || echo "Cannot run vite"
+        
       - name: Build
-        run: npm run build
+        run: |
+          echo "=== Starting build ==="
+          npm run build
         env:
           NODE_OPTIONS: '--max_old_space_size=4096'
           
